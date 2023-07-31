@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.test{
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+
+
+
+body{
+  overflow-x: hidden;
+  background-color: black;
+  z-index: -1;
+}
+.cicle-time-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding-bottom:50rem ;
+}
+
+.outer-body{
+  position: fixed;
+  top: 40%;
+  width: 1381px;
+  height: 1381px;
+  
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  transform: rotate(-127deg);
+}
+
+.content {
+  position: absolute;
+  height: 6rem;
+  width: 6rem;
+  transform-origin: 41px;
+  display: flex;
+  flex-direction: column;
+  right: -49px;
+  gap: 10px;
+  transform-origin: -40.15rem;
+  transform: rotate(calc(360deg/10*var(--i)));
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  position: absolute;
+  color: white;
+  top: 40px;
+  right: 4px;
+  transform: rotate(95deg);
+}
+
+.dot-bx {
+  /* position: absolute; */
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot:hover {
+  width: 50%;
+  height: 50%;
+  transition: 0.3s;
+}

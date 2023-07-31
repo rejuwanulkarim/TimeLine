@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sidebar.css">
+    <title>test</title>
+</head>
+
+<body>
+    <section class="test"></section>
+
+    <section class="cicle-time-line">
+
+
+        <div class="outer-body">
+            <div class="circle">
+                <div class="content" style="--i:1" onclick="rotate(this)">
+                    <span class="year">2021</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:2" onclick="rotate(this)">
+                    <span class="year">2022</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:3" onclick="rotate(this)">
+                    <span class="year">2023</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:4" onclick="rotate(this)">
+                    <span class="year">2024</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:5" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:6" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:7" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:8" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:9" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+                <div class="content" style="--i:10" onclick="rotate(this)">
+                    <span class="year">2025</span>
+                    <span class="dot-bx">
+                        <span class="dot"></span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="test"></section>
+    <script>
+        let a = 0
+        let timeLine = document.getElementsByClassName('cicle-time-line')[0]
+        let elm = document.getElementsByClassName('circle')[0]
+        window.onscroll = () => {
+
+            let tScroll = scrollY
+            if(tScroll/2<=timeLine.clientHeight){
+                // console.log(elm)
+                a = a+360/10
+                elm.setAttribute("style", `transform:rotate(${a}deg)`)
+
+
+        }
+    }
+
+    </script>
+</body>
+
+</html>
